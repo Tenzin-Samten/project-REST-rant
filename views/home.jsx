@@ -1,7 +1,7 @@
 const React = require('react')
 const Def = require('./default')
 
-function home () {function home () {
+function home () {
     return (
       <Def>
           <main>
@@ -10,6 +10,6 @@ function home () {function home () {
       </Def>
     )
   }
-  }
-
+  
 module.exports = home
+
