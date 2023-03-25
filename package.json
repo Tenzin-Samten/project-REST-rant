@@ -14,5 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "TBD - SUMMARY",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tenzin-Samten/project-REST-rant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tenzin-Samten/project-REST-rant/issues"
+  },
+  "homepage": "https://github.com/Tenzin-Samten/project-REST-rant#readme"
 }

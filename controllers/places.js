@@ -24,12 +24,12 @@ router.get('/', (req, res) => {
     res.render('POST/places')
   })
 
-  router.get('/places/new', (req, res) => {
-    res.render('GET/places')
+  router.get('/', (req, res) => {
+    res.render('palces/index')
   })
   
-  router.get('/places/:id', (req, res) => {
-    res.render('GET/places')
+  router.get('/new', (req, res) => {
+    res.render('places/new')
   })
   router.put('/places/id', (req, res) => {
     res.render('PUT/places')
@@ -44,7 +44,7 @@ router.get('/', (req, res) => {
     router.get('/places/:id', (req, res) => {
         res.render('DELETE/places')
     })
-    router.psot('/places/:id/edit/rant', (req, res) => {
+    router.post('/places/:id/edit/rant', (req, res) => {
         res.render('POST/places')
     })
     router.delete('/places/:id/rantld', (req, res) => {
