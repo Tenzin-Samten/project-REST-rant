@@ -15,14 +15,16 @@ router.get('/', (req, res) => {
       cuisines: 'Coffee, Bakery',
       pic: '/images/cafe.jpg'
   }]
-  
-      
-    res.render('GET/places', {places})
-  })
 
-  router.post('/places', (req, res) => {
-    res.render('POST/places')
-  })
+  router.post('/', (req, res) => {
+  console.log(req.body)
+  res.send('POST /places')
+})
+
+
+res.render('GET/places', {places})
+})
+
 
   router.get('/', (req, res) => {
     res.render('palces/index')
