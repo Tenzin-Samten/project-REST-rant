@@ -1,15 +1,12 @@
 const React = require('react')
-const Def = require('../default')
+const Def = require('../default.jsx')
 
-function show (data) {
+function edit_form (data) {
     return (
         <Def>
           <main>
-            <h1>{ data.place.name }</h1>
-            <a href="" className="btn btn-warning"> 
-  Edit
-</a>  
-<form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
+            <h1>Edit Place</h1>
+            <form method="POST" action={`/places/${data.id}?_method=PUT`}>
   <div className="row">
       <div className="form-group col-sm-6">
           <label htmlFor="name">Place Name</label>
@@ -24,15 +21,9 @@ function show (data) {
   ...
 </form>
 
-
-
-
-
-
           </main>
         </Def>
     )
 }
 
-module.exports = show
-
+module.exports = edit_form
