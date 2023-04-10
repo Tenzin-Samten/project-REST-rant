@@ -1,17 +1,22 @@
 const React = require('react')
 const Def = require('../default')
 
-function new_form() {
+function new_form(data) {
 	return (
 		<Def>
 			<main>
 				<h1>Add a New Place</h1>
 				<form method="POST" action="/places">
-				<div className="form-group">
-  			<label for="founded">Founded Year</label>
-  			<input className="form-control" id="founded" name="founded" />
-				</div>
-					<div className="form-group">
+				<div className="form-group col-sm-4">
+  <label htmlFor="founded">Founded Year</label>
+  <input 
+    type="number" 
+    className="form-control" 
+    id="founded" 
+    name="founded" 
+    value={new Date().getFullYear()} />
+</div>
+<div className="form-group">
 						<label htmlFor="name">Place Name</label>
 						<input className="form-control" id="name" name="name" required />
 					</div>
