@@ -4,7 +4,7 @@ const express = require('express')
 const methodOverride = require('method-override')
 const app = express()
 
-// Express Settings
+
 // Express Settings
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
@@ -21,7 +21,7 @@ app.use('/places', require('./controllers/places'))
 app.get('/', (req, res) => {
     res.render('home')
 })
-
+//404
 app.get('*', (req, res) => {
     res.render('error404')
 })
